@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "bun run --hot server.ts",
-    "test": "cd test/controllers/person && bun test --watch"
+    "test": "cd test/controllers/person && bun --watch test"
   },
   "devDependencies": {
     "bun-types": "latest"

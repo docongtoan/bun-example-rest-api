@@ -4,7 +4,6 @@ interface Person {
     title?: string,
     body?: string
 }
-
 export class PersonController {
     async getList(){
         let result : Person[] = [];

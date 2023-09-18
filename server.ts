@@ -14,7 +14,7 @@ const app = Bun.serve({
       data = {};
     }
     const token: string = req.headers.get('Authorization')?.split(' ')[1] || ''; 
-    return await Router.prototype.Root(token,url.pathname, {params,data});
+    return await new Router(token,url.pathname, {params,data}).Root();
   },
   websocket: {
     open(ws) {},
