@@ -1,3 +1,4 @@
+### post data
 POST  http://localhost:3000/blog
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NjY5NDM2NTcsInV1aWQiOjkzNjIsInVzZXJuYW1lIjoiQzIwMjExMDE1ODg4OCJ9.ax0L91BP0vXMzWISu8tntIiXUr5ts1b_1Tk_YZJmuYt9ikQ9gl8TCwwbRRVGWHtMd-Ixl8a7DEBxsAGpZ2VJwQ
 Content-Type: application/json
@@ -6,7 +7,12 @@ Content-Type: application/json
     "name": "Toan Do"
 }
 
-###
+### Get list person
 
 GET http://localhost:3000/person/get-list
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NjY5NDM2NTcsInV1aWQiOjkzNjIsInVzZXJuYW1lIjoiQzIwMjExMDE1ODg4OCJ9.ax0L91BP0vXMzWISu8tntIiXUr5ts1b_1Tk_YZJmuYt9ikQ9gl8TCwwbRRVGWHtMd-Ixl8a7DEBxsAGpZ2VJwQ
+
+### Get Row Person id is 1
+
+GET http://localhost:3000/person/get-row?id=1
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NjY5NDM2NTcsInV1aWQiOjkzNjIsInVzZXJuYW1lIjoiQzIwMjExMDE1ODg4OCJ9.ax0L91BP0vXMzWISu8tntIiXUr5ts1b_1Tk_YZJmuYt9ikQ9gl8TCwwbRRVGWHtMd-Ixl8a7DEBxsAGpZ2VJwQ

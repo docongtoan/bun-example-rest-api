@@ -1,8 +1,8 @@
 interface Person {
-    userId: number,
-    id: number,
-    title: string,
-    body: string
+    userId?: number,
+    id?: number,
+    title?: string,
+    body?: string
 }
 
 export class PersonController {
@@ -10,6 +10,17 @@ export class PersonController {
         let result : Person[] = [];
         try {
             let resData = await fetch('https://jsonplaceholder.typicode.com/posts');
+            result = await resData.json();
+            return result;
+        } catch (error) {
+            return new Error(JSON.stringify(error));
+        }
+    }
+
+    async getRow(id:number){
+        let result : Person = {};
+        try {
+            let resData = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
             result = await resData.json();
             return result;
         } catch (error) {

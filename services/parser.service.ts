@@ -1,6 +1,6 @@
 export class ParserService {
 
-    public getAllParam(url: URL){
+    public getAllParam(url: URL):object{
         return new Promise((resolve)=> {
             let result: any  = {};
             url.searchParams.forEach((value,key)=> {
@@ -10,7 +10,7 @@ export class ParserService {
         });
     }
 
-    public getTokenHeaders(token: string){
+    public getTokenHeaders(token: string):string{
         return token.split(' ')[1];
     }
 }
