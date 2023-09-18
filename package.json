@@ -3,7 +3,8 @@
   "module": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run --hot server.ts"
+    "start": "bun run --hot server.ts",
+    "test": "cd test/controllers/person && bun test --watch"
   },
   "devDependencies": {
     "bun-types": "latest"
